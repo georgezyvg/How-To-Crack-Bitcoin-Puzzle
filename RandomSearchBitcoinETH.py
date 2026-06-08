@@ -51,7 +51,7 @@ cores=1 #CPU Control Set Cores
 
 def seek(r):
         while True:
-            ran = secrets.randbelow(115792089237316195423570985008687907852837564279074904382605163141518161494337)  #Puzzle 1-20 #Use Examples 
+            ran = secrets.randbelow(1461501637330902918203684832716283019655932542975)  #Puzzle 1-20 #Use Examples 
             key1 = Key.from_int(ran)
             wif = bytes_to_wif(key1.to_bytes(), compressed=False) #Uncompressed WIF
             wif2 = bytes_to_wif(key1.to_bytes(), compressed=True) #compressed WIF
