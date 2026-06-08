@@ -47,7 +47,7 @@ cores=1 #CPU Control Set Cores
 
 def seek(r):
         while True:
-            ran = secrets.SystemRandom().randrange(1,1023)     #TestScan # Already found  #Use Examples 
+            ran = secrets.SystemRandom().randrange(71,160)     #TestScan # Already found  #Use Examples 
             key1 = Key.from_int(ran)
             wif = bytes_to_wif(key1.to_bytes(), compressed=False) #Uncompressed WIF
             wif2 = bytes_to_wif(key1.to_bytes(), compressed=True) #compressed WIF
